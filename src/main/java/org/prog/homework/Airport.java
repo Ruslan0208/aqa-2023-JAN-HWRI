@@ -40,7 +40,7 @@ public class Airport {
                 .filter(plane -> plane.destination.equals(c))
                 .map(plane -> plane.flightNumber)
                 .collect(Collectors.toList());
-        System.out.println("Самолеты на Киев:");
+        System.out.println("Самолеты на "+ c);
         for (String i : planeByDestination) {
             System.out.println(i);
         }
